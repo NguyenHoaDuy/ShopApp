@@ -1,0 +1,55 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.kakakak"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+    dependencies {
+        implementation platform('com.google.firebase:firebase-bom:32.7.0') // Sử dụng phiên bản mới nhất
+        implementation 'com.google.firebase:firebase-auth'
+        implementation 'com.google.firebase:firebase-auth:21.0.4'
+        implementation 'com.google.firebase:firebase-core:21.0.0'
+
+    }
+
+
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId = "com.example.kakakak"
+        // Bạn có thể cập nhật các giá trị sau cho phù hợp với ứng dụng của mình.
+        // Thông tin thêm: https://flutter.dev/to/review-gradle-config.
+        minSdk = 23  // Thay đổi từ flutter.minSdkVersion thành 23
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+
+    buildTypes {
+        release {
+            // TODO: Add your own signing config for the release build.
+            // Signing with the debug keys for now, so `flutter run --release` works.
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+apply plugin: 'com.google.gms.google-services'

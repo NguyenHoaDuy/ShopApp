@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1009274780154",
+    "project_id": "phonelogin-e64a0",
+    "storage_bucket": "phonelogin-e64a0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009274780154:android:0d169688766eb78519cc43",
+        "android_client_info": {
+          "package_name": "com.example.kakakak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009274780154-pjl7ea1s8atsi4a91gfv7gfnh1bor6d2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kakakak",
+            "certificate_hash": "be955d92309be8b03f541f334124e4f8c120e2be"
+          }
+        },
+        {
+          "client_id": "1009274780154-kafkphaue9ll693tcar6anmv1knbef1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlMX9Ms_YGL-20phZhUlxr4rsGnzCKZzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009274780154-kafkphaue9ll693tcar6anmv1knbef1c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
